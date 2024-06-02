@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    main {
+      width: 350px;
+      height: 596px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+      padding: 24px;
+    }
+
+    main>img {
+      border-radius: 8px;
+    }
+
+    #first-image-container:hover {
+      cursor: pointer;
+      box-shadow: inset 0 0 0 1000px hsla(178, 100%, 50%, 0.5);
+    }
+
+    #first-image-container:hover>img {
+      display: block;
+    }
+
+    #first-image-container>img {
+      display: none;
+    }
+
+    #first-image-container {
+      width: 302px;
+      height: 302px;
+      background-image: url("images/image-equilibrium.jpg");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    #main-text {
+      color: white;
+      font-size: 22px;
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+
+    #main-text:hover {
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    #description-text {
+      color: hsl(215, 51%, 70%);
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 16px;
+    }
+
+    #info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    #left-div {
+      color: hsl(178, 100%, 50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    #right-div {
+      color: hsl(215, 51%, 70%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    hr {
+      color: hsl(215, 32%, 27%);
+      height: 1px;
+      margin-top: 24px;
+    }
+
+    #person-container {
+      margin-top: 16px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 16px;
+      color: white;
+    }
+
+    #person-container>img {
+      border: 1px solid white;
+      border-radius: 100%;
+    }
+
+    #person-container span {
+      color: white;
+      margin-left: 5px;
+    }
+
+    #person-container span:hover {
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    #person-container {
+      color: hsl(215, 51%, 70%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="first-image-container"><img src="images/icon-view.svg"></div>
+    <p id="main-text">Equilibrium #3429</p>
+    <p id="description-text">Our Equilibrium collection promotes balance and calm.</p>
+    <div id="info-container">
+      <div id="left-div"><img src="images/icon-ethereum.svg"> 0.041 ETH</div>
+      <div id="right-div"><img src="images//icon-clock.svg">3 days
+        left</div>
+    </div>
+    <hr>
+    <div id="person-container">
+      <img src="images/image-avatar.png" width="33" height="33">
+      <p>Creation of<span> Jules Wyvern </span></p>
+    </div>
+  </main>
+</body>
+
+</html>
